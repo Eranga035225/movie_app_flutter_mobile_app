@@ -29,21 +29,41 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
                   ]
           
                 )),
-                SizedBox(height: 10,),
-                Text('Discover top-rated movies, trending hits,\nand new releases all in one place..',style: TextStyle(color: Colors.grey.shade700,fontSize: 16),),
-                SizedBox(height: 8),
-                Row(children: [
+
+
+              SizedBox(height: 10,),
+              Text('Discover top-rated movies, trending hits,\nand new releases all in one place..',style: TextStyle(color: Colors.grey.shade500,fontSize: 16),),
+              SizedBox(height: 10),
+              Row(children: [
                   Container(
                     width: 80,
-                    height: 10,
+                    height: 8,
                     decoration: BoxDecoration(
                       color: Color(0xFFFF515A),
                       borderRadius: BorderRadius.circular(10)
 
                     ),
+                  ),
+                  SizedBox(width: 8),
+                  CircleAvatar(
+                    radius: 4,
+                    backgroundColor: Colors.grey.shade300
+                  ),
+                   SizedBox(width: 8),
+                  CircleAvatar(
+                    radius: 4,
+                    backgroundColor: Colors.grey.shade300
                   )
+                  
 
-                ],)
+                ],
+                
+              ),
+              SizedBox(height: 15),
+
+              IconButton(onPressed: (){
+
+              }, icon: Icon(Icons.arrow_forward_ios_rounded,size: 30,color: Color(0xFFFF515A),))
 
                 
                 ]
