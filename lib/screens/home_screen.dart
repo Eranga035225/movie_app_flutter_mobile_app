@@ -130,13 +130,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   }),
               ),
               SizedBox(height: 20),
-               Row(
+              Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                 Text('Favourite Movies', style: TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.bold),),
                 Spacer(),
                 Text('See All', style: TextStyle(color: Colors.red.shade800,fontSize: 15),),
               ],),
+              SizedBox(height: 10,),
             
               SizedBox(
                 height: 250,
