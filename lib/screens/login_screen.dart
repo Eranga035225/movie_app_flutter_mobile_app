@@ -24,7 +24,48 @@ class LoginScreen extends StatelessWidget {
                   border: Border.all(
                     color: Colors.grey.shade400,),
                     borderRadius: BorderRadius.circular(10),
-                )),
+                ),
+
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                  Image.asset('assets/icons/apple.jpg',width: 18,),
+                  SizedBox(width: 20,),
+                  Text('Login with Apple',style: TextStyle(color: Colors.black,fontSize: 16),),
+
+                ],)
+                
+                
+                
+                ),
+                SizedBox(height: 20,),
+                 Container(
+                width: 350,
+                height: 55,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey.shade400,),
+                    borderRadius: BorderRadius.circular(10),
+                ),
+
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SizedBox(width: 7),
+                  Image.asset('assets/icons/google.jpg',width: 18,),
+                  SizedBox(width: 22,),
+                  Text('Login with Google',style: TextStyle(color: Colors.black,fontSize: 16),),
+
+                ],)
+                
+                
+                
+                ),
+
+
+                
               
               
             ],),
