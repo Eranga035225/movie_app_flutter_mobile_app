@@ -143,10 +143,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: films.length,
+                  reverse: true,
                   
                   itemBuilder: (context, index) {
 
-                    var film = films[index+1];
+                    var film = films[index];
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
