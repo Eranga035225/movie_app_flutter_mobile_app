@@ -64,6 +64,33 @@ class LoginScreen extends StatelessWidget {
                 
                 ),
 
+                SizedBox(height: 12,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 60,
+                      height: 1,
+                      decoration: BoxDecoration(
+                        color: Colors.grey
+
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal:8.0),
+                      child: Text('Or continue with social accounts',style: TextStyle(color: Colors.grey.shade600,fontSize: 15),),
+                    ),
+                     Container(
+                      width: 60,
+                      height: 1,
+                      decoration: BoxDecoration(
+                        color: Colors.grey
+
+                      ),
+                    ),
+                  ],
+                ),
+
 
                 
               
