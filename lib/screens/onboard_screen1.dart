@@ -26,7 +26,7 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
                   text: 'Find the',
                   style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold),
                   children: [
-                    TextSpan(text: ' latest and\ngreatest',style: TextStyle( color: Color(0xFFFF515A),fontSize: 35,fontWeight: FontWeight.bold)),
+                    TextSpan(text: ' latest and\ngreatest',style: TextStyle( color:Colors.red.shade800,fontSize: 35,fontWeight: FontWeight.bold)),
                     TextSpan(text: ' movie here',style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold)),
                   ]
           
@@ -34,14 +34,14 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
 
 
               SizedBox(height: 10,),
-              Text('Discover top-rated movies, trending hits,\nand new releases all in one place..',style: TextStyle(color: Colors.grey.shade500,fontSize: 16),),
+              Text('Discover top-rated movies, trending hits,\nand new releases all in one place..',style: TextStyle(color: Colors.grey.shade600,fontSize: 16),),
               SizedBox(height: 10),
               Row(children: [
                   Container(
                     width: 80,
                     height: 8,
                     decoration: BoxDecoration(
-                      color: Color(0xFFFF515A),
+                      color: Colors.red.shade800,
                       borderRadius: BorderRadius.circular(10)
 
                     ),
@@ -72,7 +72,7 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
               color: Colors.white,
                 style: ButtonStyle(
                   backgroundColor: WidgetStatePropertyAll(
-                    Color(0xFFFF515A)
+                    Colors.red.shade800,
                   )
                 )
 
