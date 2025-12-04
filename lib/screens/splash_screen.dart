@@ -29,15 +29,18 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.movie,size: 60, color: Color(0xFFFF515A),),
-              SizedBox(width: 10,),
-              Text("CinemateX",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35),),
-            ],
+          Center(
+            child: Image.asset('assets/images/logo.png',width: 350,),
           ),
-          Text('Your companion to the world of cinema',style: TextStyle(color: Colors.grey,fontSize: 16),),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   children: [
+          //     Icon(Icons.movie,size: 60, color: Color(0xFFFF515A),),
+          //     SizedBox(width: 10,),
+          //     Text("CinemateX",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35),),
+          //   ],
+          // ),
+          // Text('Your companion to the world of cinema',style: TextStyle(color: Colors.grey,fontSize: 16),),
           
          
         ],
