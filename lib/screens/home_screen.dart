@@ -74,7 +74,20 @@ class _HomeScreenState extends State<HomeScreen> {
               Text('Category', style: TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.bold),),
               Spacer(),
               Text('See All', style: TextStyle(color: Colors.red.shade800,fontSize: 16),),
-            ],)
+            ],),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Category(emoji: '🥰', type: 'Romance'),
+                Category(emoji: '😂', type: 'Comedy'),
+                Category(emoji: '😱', type: 'Horror'),
+                Category(emoji: '😁', type: 'Drama'),
+
+                 
+
+              ],
+            )
           
           
           
@@ -92,5 +105,31 @@ class _HomeScreenState extends State<HomeScreen> {
     
     
     );
+  }
+}
+
+class Category extends StatelessWidget {
+  String emoji;
+  String type;
+  Category({
+    super.key,
+    required this.emoji,
+    required this.type
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: [
+      Container(
+        width: 30,
+        height: 30,
+        decoration: BoxDecoration(
+    
+        ),
+        child: Text(emoji, style:TextStyle(fontSize: 24))
+      ),
+      SizedBox(height: 15,),
+      Text(type, style: TextStyle(color: Colors.black,fontSize: 16),)
+    ],);
   }
 }
