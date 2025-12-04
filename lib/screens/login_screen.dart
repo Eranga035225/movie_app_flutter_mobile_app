@@ -163,10 +163,21 @@ class LoginScreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.topRight,
                   child: Padding(
-                    padding: const EdgeInsets.only(right:30.0),
+                    padding: const EdgeInsets.only(right:28.0),
                     child: Text('Forgot Password ?', style: TextStyle(color: Colors.red.shade800,fontSize: 15),),
                   )),
                 SizedBox(height: 20,),
+                Container(
+                  width: 350,
+                  height: 55,
+                  decoration: BoxDecoration(
+                    color: Colors.red.shade800,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Center(
+                    child: Text('Login',style: TextStyle(color: Colors.white,fontSize: 18, fontWeight: FontWeight.bold),),
+                  ),
+                )
 
                 
               
