@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 
-import 'onboard_screen2.dart';
-
-class OnBoardScreen1 extends StatefulWidget {
-  const OnBoardScreen1({super.key});
+class OnBoardScreen2 extends StatefulWidget {
+  const OnBoardScreen2({super.key});
 
   @override
-  State<OnBoardScreen1> createState() => _OnBoardScreen1State();
+  State<OnBoardScreen2> createState() => _OnBoardScreen2State();
 }
 
-class _OnBoardScreen1State extends State<OnBoardScreen1> {
+class _OnBoardScreen2State extends State<OnBoardScreen2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:  Colors.grey.shade100,
+      backgroundColor: Colors.grey.shade100,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(top:38.0,left: 12,right: 12),
@@ -23,18 +21,18 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
             children: [
               Text.rich(
                 TextSpan(
-                  text: 'Find the',
+                  text: 'Enjoy your',
                   style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold),
                   children: [
-                    TextSpan(text: ' latest and\ngreatest',style: TextStyle( color: Color(0xFFFF515A),fontSize: 35,fontWeight: FontWeight.bold)),
-                    TextSpan(text: ' movie here',style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold)),
+                    TextSpan(text: ' favourite\nmovie',style: TextStyle( color: Color(0xFFFF515A),fontSize: 35,fontWeight: FontWeight.bold)),
+                    TextSpan(text: ' with us',style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold)),
                   ]
           
                 )),
 
 
               SizedBox(height: 10,),
-              Text('Discover top-rated movies, trending hits,\nand new releases all in one place..',style: TextStyle(color: Colors.grey.shade500,fontSize: 16),),
+              Text('Stay updated with the newest\nand most popular films instantly...',style: TextStyle(color: Colors.grey.shade500,fontSize: 16),),
               SizedBox(height: 10),
               Row(children: [
                   Container(
@@ -64,7 +62,6 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
               SizedBox(height: 15),
               IconButton(
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => OnBoardScreen2()));
                   
 
                 } 
@@ -81,7 +78,7 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
 
               SizedBox(height: 40),
              
-              Image.asset('assets/images/girl1.png'),
+              Image.asset('assets/images/girl2.png'),
 
 
 
