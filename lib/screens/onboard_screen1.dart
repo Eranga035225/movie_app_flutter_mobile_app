@@ -12,9 +12,13 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(children: [
-        Text('Find your favorite movie',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
-      ],)
+      body: SafeArea(
+        child: Column(
+          
+          children: [
+          Text('Find the latest and\ngreatest movie here',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
+        ],),
+      )
       
 
 
