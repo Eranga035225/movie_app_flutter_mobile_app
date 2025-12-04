@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(Icons.movie,size: 60,color: Colors.red,),
+              Icon(Icons.movie,size: 60, color: Color(0xFFFF515A),),
               SizedBox(width: 10,),
               Text("CinemateX",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 35),),
             ],

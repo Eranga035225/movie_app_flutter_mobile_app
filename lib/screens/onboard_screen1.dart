@@ -24,7 +24,7 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
                   text: 'Find the',
                   style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold),
                   children: [
-                    TextSpan(text: ' latest and\ngreatest',style: TextStyle(color: Colors.red,fontSize: 35,fontWeight: FontWeight.bold)),
+                    TextSpan(text: ' latest and\ngreatest',style: TextStyle( color: Color(0xFFFF515A),fontSize: 35,fontWeight: FontWeight.bold)),
                     TextSpan(text: ' movie here',style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold)),
                   ]
           
@@ -33,7 +33,16 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
                 Text('Discover top-rated movies, trending hits,\nand new releases all in one place..',style: TextStyle(color: Colors.grey.shade700,fontSize: 16),),
                 SizedBox(height: 8),
                 Row(children: [
-                  
+                  Container(
+                    width: 80,
+                    height: 10,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFFF515A),
+                      borderRadius: BorderRadius.circular(10)
+
+                    ),
+                  )
+
                 ],)
 
                 
