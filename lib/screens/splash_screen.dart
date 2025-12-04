@@ -2,7 +2,7 @@ import 'dart:async' show Timer;
 
 import 'package:flutter/material.dart';
 
-import 'home_screen.dart';
+import 'onboard_screen1.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,10 +13,13 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
 
+  @override
   void initState(){
+    
+    super.initState();
 
-    Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacement((context), MaterialPageRoute(builder: (context) => HomeScreen()));
+    Timer(Duration(seconds: 5), () {
+      Navigator.pushReplacement((context), MaterialPageRoute(builder: (context) => OnBoardScreen1()));
     });
   }
   @override
@@ -35,6 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ],
           ),
           Text('Your companion to the world of cinema',style: TextStyle(color: Colors.grey,fontSize: 16),),
+          
          
         ],
       ),
