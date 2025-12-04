@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'onboard_screen3.dart';
+
 class OnBoardScreen2 extends StatefulWidget {
   const OnBoardScreen2({super.key});
 
@@ -24,7 +26,7 @@ class _OnBoardScreen2State extends State<OnBoardScreen2> {
                   text: 'Enjoy your',
                   style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold),
                   children: [
-                    TextSpan(text: ' favourite\nmovie',style: TextStyle( color: Color(0xFFFF515A),fontSize: 35,fontWeight: FontWeight.bold)),
+                    TextSpan(text: ' favourite\nmovie',style: TextStyle( color:  Colors.red.shade800,fontSize: 35,fontWeight: FontWeight.bold)),
                     TextSpan(text: ' with us',style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold)),
                   ]
           
@@ -32,14 +34,14 @@ class _OnBoardScreen2State extends State<OnBoardScreen2> {
 
 
               SizedBox(height: 10,),
-              Text('Stay updated with the newest\nand most popular films instantly...',style: TextStyle(color: Colors.grey.shade500,fontSize: 16),),
+              Text('Stay updated with the newest\nand most popular films instantly...',style: TextStyle(color: Colors.grey.shade600,fontSize: 16),),
               SizedBox(height: 10),
               Row(children: [
                   Container(
                     width: 80,
                     height: 8,
                     decoration: BoxDecoration(
-                      color: Color(0xFFFF515A),
+                      color: Colors.red.shade800,
                       borderRadius: BorderRadius.circular(10)
 
                     ),
@@ -62,6 +64,7 @@ class _OnBoardScreen2State extends State<OnBoardScreen2> {
               SizedBox(height: 15),
               IconButton(
                 onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => OnBoardScreen3()));
                   
 
                 } 
@@ -69,7 +72,7 @@ class _OnBoardScreen2State extends State<OnBoardScreen2> {
               color: Colors.white,
                 style: ButtonStyle(
                   backgroundColor: WidgetStatePropertyAll(
-                    Color(0xFFFF515A)
+                     Colors.red.shade800
                   )
                 )
 
