@@ -11,8 +11,10 @@ class LoginScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Center(
-            child: Column(children: [
-              Image.asset('assets/images/logo2.png',width: 200,),
+            child: Column(
+              
+              children: [
+              Image.asset('assets/images/logo2.png',width: 220,),
               SizedBox(height: 15,),
               Text('Welcome Back',style: TextStyle(color: Colors.black,fontSize: 25,fontWeight: FontWeight.bold),),
               Text('Log in to your account using email or social networls',style: TextStyle(color: Colors.grey.shade600,fontSize: 15),textAlign: TextAlign.center,),
@@ -32,7 +34,7 @@ class LoginScreen extends StatelessWidget {
                   children: [
                   Image.asset('assets/icons/apple.jpg',width: 18,),
                   SizedBox(width: 20,),
-                  Text('Login with Apple',style: TextStyle(color: Colors.black,fontSize: 16),),
+                  Text('Login with Apple',style: TextStyle(color: Colors.black,fontSize: 16, fontWeight: FontWeight.w600),),
 
                 ],)
                 
@@ -56,7 +58,7 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(width: 7),
                   Image.asset('assets/icons/google.jpg',width: 18,),
                   SizedBox(width: 22,),
-                  Text('Login with Google',style: TextStyle(color: Colors.black,fontSize: 16),),
+                  Text('Login with Google',style: TextStyle(color: Colors.black,fontSize: 16, fontWeight: FontWeight.w600),),
 
                 ],)
                 
@@ -98,6 +100,7 @@ class LoginScreen extends StatelessWidget {
                     decoration: InputDecoration(
                       
                       hintText: 'Mobile Number',
+                      hintStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide(
@@ -116,8 +119,8 @@ class LoginScreen extends StatelessWidget {
                           width: 1.2
                         )
                         ),
-                      prefixIcon: Icon(Icons.phone_android_rounded, size: 18),
-                      prefixIconColor: Colors.grey.shade600,
+                      //prefixIcon: Icon(Icons.phone_android_rounded, size: 18),
+                      //prefixIconColor: Colors.grey.shade600,
                       
                     ),
                     
@@ -130,7 +133,7 @@ class LoginScreen extends StatelessWidget {
                   child: TextField(
                     decoration: InputDecoration(
                       
-                      hintText: 'Password',
+                      hintText: 'Password',hintStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide(
@@ -149,9 +152,9 @@ class LoginScreen extends StatelessWidget {
                           width: 1.2
                         )
                         ),
-                      prefixIcon: Icon(Icons.password_sharp, size: 18),
+                      //prefixIcon: Icon(Icons.password_sharp, size: 18),
                       suffixIcon: Icon(Icons.visibility_off_rounded),
-                      prefixIconColor: Colors.grey.shade600,
+                      // prefixIconColor: Colors.grey.shade600,
                       
                     ),
                     
@@ -164,7 +167,7 @@ class LoginScreen extends StatelessWidget {
                   alignment: Alignment.topRight,
                   child: Padding(
                     padding: const EdgeInsets.only(right:28.0),
-                    child: Text('Forgot Password ?', style: TextStyle(color: Colors.red.shade800,fontSize: 15),),
+                    child: Text('Forgot Password ?', style: TextStyle(color: Colors.red.shade800,fontSize: 15, fontWeight: FontWeight.w600),),
                   )),
                 SizedBox(height: 20,),
                 Container(
@@ -172,11 +175,23 @@ class LoginScreen extends StatelessWidget {
                   height: 55,
                   decoration: BoxDecoration(
                     color: Colors.red.shade800,
+                    
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
                     child: Text('Login',style: TextStyle(color: Colors.white,fontSize: 18, fontWeight: FontWeight.bold),),
                   ),
+                ),
+                SizedBox(height: 20,),
+                Text.rich(
+                  TextSpan(text: 'Didn\'t have an account ? ',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 15),
+                  children: [
+                    TextSpan(
+                      text: 'Register',style: TextStyle(color: Colors.red.shade800,fontSize: 15),
+                    )
+                    
+                  ])
+                  
                 )
 
                 
