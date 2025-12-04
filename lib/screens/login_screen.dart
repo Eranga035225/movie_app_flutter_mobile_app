@@ -90,7 +90,83 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(height: 20,),
+                
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 22.0),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      
+                      hintText: 'Mobile Number',
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          color: Colors.grey,
+                          width: 1.2
+                        )
+                        
+                        ),
 
+
+
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          color: Colors.grey,
+                          width: 1.2
+                        )
+                        ),
+                      prefixIcon: Icon(Icons.phone_android_rounded, size: 18),
+                      prefixIconColor: Colors.grey.shade600,
+                      
+                    ),
+                    
+                  
+                  ),
+                ),
+                SizedBox(height: 12,),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 22.0),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      
+                      hintText: 'Password',
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          color: Colors.grey,
+                          width: 1.2
+                        )
+                        
+                        ),
+
+
+
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          color: Colors.grey,
+                          width: 1.2
+                        )
+                        ),
+                      prefixIcon: Icon(Icons.password_sharp, size: 18),
+                      suffixIcon: Icon(Icons.visibility_off_rounded),
+                      prefixIconColor: Colors.grey.shade600,
+                      
+                    ),
+                    
+                  
+                  ),
+                ),
+                SizedBox(height: 10,),
+
+                Align(
+                  alignment: Alignment.topRight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(right:30.0),
+                    child: Text('Forgot Password ?', style: TextStyle(color: Colors.red.shade800,fontSize: 15),),
+                  )),
+                SizedBox(height: 20,),
 
                 
               
