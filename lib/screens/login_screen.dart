@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/screens/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -19,28 +20,33 @@ class LoginScreen extends StatelessWidget {
               Text('Welcome Back',style: TextStyle(color: Colors.black,fontSize: 25,fontWeight: FontWeight.bold),),
               Text('Log in to your account using email or social networls',style: TextStyle(color: Colors.grey.shade600,fontSize: 15),textAlign: TextAlign.center,),
               SizedBox(height: 30,),
-              Container(
-                width: 350,
-                height: 55,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.grey.shade400,),
-                    borderRadius: BorderRadius.circular(10),
-                ),
-
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                  Image.asset('assets/icons/apple.jpg',width: 18,),
-                  SizedBox(width: 20,),
-                  Text('Login with Apple',style: TextStyle(color: Colors.black,fontSize: 16, fontWeight: FontWeight.w600),),
-
-                ],)
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                },
+                child: Container(
+                  width: 350,
+                  height: 55,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey.shade400,),
+                      borderRadius: BorderRadius.circular(10),
+                  ),
                 
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                    Image.asset('assets/icons/apple.jpg',width: 18,),
+                    SizedBox(width: 20,),
+                    Text('Login with Apple',style: TextStyle(color: Colors.black,fontSize: 16, fontWeight: FontWeight.w600),),
                 
-                
-                ),
+                  ],)
+                  
+                  
+                  
+                  ),
+              ),
                 SizedBox(height: 20,),
                  Container(
                 width: 350,
