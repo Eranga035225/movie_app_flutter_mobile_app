@@ -68,6 +68,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Icon(Icons.tune_rounded,color: Colors.white,),
               )
 
+            ],),
+            SizedBox(height: 20),
+            Row(children: [
+              Text('Category', style: TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.bold),),
+              Spacer(),
+              Text('See All', style: TextStyle(color: Colors.red.shade800,fontSize: 16),),
             ],)
           
           
