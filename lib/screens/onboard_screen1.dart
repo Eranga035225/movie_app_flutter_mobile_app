@@ -60,10 +60,34 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
                 
               ),
               SizedBox(height: 15),
+              IconButton(
+                onPressed: (){
 
-              IconButton(onPressed: (){
+                } 
+              , icon: Icon(Icons.arrow_forward_ios_rounded),
+              color: Colors.white,
+                style: ButtonStyle(
+                  backgroundColor: WidgetStatePropertyAll(
+                    Color(0xFFFF515A)
+                  )
+                )
 
-              }, icon: Icon(Icons.arrow_forward_ios_rounded,size: 30,color: Color(0xFFFF515A),))
+
+              ),
+
+              SizedBox(height: 20),
+              Spacer(),
+              Image.asset('assets/images/girl1.png'),
+
+
+
+
+
+              
+              
+              
+              
+            
 
                 
                 ]
