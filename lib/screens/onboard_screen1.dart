@@ -13,13 +13,28 @@ class _OnBoardScreen1State extends State<OnBoardScreen1> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Column(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            
+            children: [
+              Text.rich(
+                TextSpan(
+                  text: 'Find the',
+                  style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),
+                  children: [
+                    TextSpan(text: ' latest and\ngreatest',style: TextStyle(color: Colors.red,fontSize: 30,fontWeight: FontWeight.bold)),
+                    TextSpan(text: ' movie here',style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold)),
+                  ]
           
-          children: [
-          Text('Find the latest and\ngreatest movie here',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
-        ],),
-      )
-      
+                ))]
+                  
+                  
+                  
+                  ),
+        ))
+              
+          
 
 
 
