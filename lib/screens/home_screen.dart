@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/data/demo_data.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -10,6 +11,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    var films = DemoData.films;
     final size  = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
@@ -27,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Spacer(),
               CircleAvatar(
-                radius: 23,
+                radius: 20,
                 backgroundImage: NetworkImage('https://th.bing.com/th/id/OIP.w2McZSq-EYWxh02iSvC3xwHaHa?w=182&h=182&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1'),
                 
                 )
@@ -99,6 +101,35 @@ class _HomeScreenState extends State<HomeScreen> {
               Text('See All', style: TextStyle(color: Colors.red.shade800,fontSize: 15),),
             ],),
 
+            SizedBox(height: 10,),
+            SizedBox(
+              height: 250,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: films.length,
+                
+                itemBuilder: (context, index) {
+                  var film = films[index];
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      width: 150,
+                      
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: DecorationImage(image: NetworkImage(film.imageUrl),fit: BoxFit.cover)
+                      ),
+                              
+                              
+                              
+                              
+                    ),
+                  );
+                }),
+            )
+
+
+
 
             
 
@@ -144,7 +175,7 @@ class Category extends StatelessWidget {
         child: Text(emoji, style:TextStyle(fontSize: 24))
       ),
       SizedBox(height: 18,),
-      Text(type, style: TextStyle(color: Colors.black,fontSize: 16),)
+      Text(type, style: TextStyle(color: Colors.black,fontSize: 15),)
     ],);
   }
 }

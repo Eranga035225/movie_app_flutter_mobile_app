@@ -19,47 +19,47 @@ class DemoData {
       type: 'Hollywood Movie',
       imageUrl: 'https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SL1500_.jpg',
     ),
+FilmModel(
+  title: 'The Dark Knight',
+  type: 'Hollywood Movie',
+  imageUrl: 'https://i.imgur.com/3R0gG4L.jpeg',
+),
 
-    FilmModel(
-      title: 'The Dark Knight',
-      type: 'Hollywood Movie',
-      imageUrl: 'https://m.media-amazon.com/images/I/51k0qa6qFtL._AC_.jpg',
-    ),
+FilmModel(
+  title: 'Avatar: The Way of Water',
+  type: 'Hollywood Movie',
+  imageUrl: 'https://i.imgur.com/gUt3BpU.jpeg',
+),
 
-    FilmModel(
-      title: 'Avatar: The Way of Water',
-      type: 'Hollywood Movie',
-      imageUrl: 'https://m.media-amazon.com/images/I/71VwL7D1RnL._AC_SL1500_.jpg',
-    ),
+FilmModel(
+  title: 'KGF Chapter 2',
+  type: 'Indian Movie',
+  imageUrl: 'https://i.imgur.com/rC9XxwP.jpeg',
+),
 
-    FilmModel(
-      title: 'KGF Chapter 2',
-      type: 'Indian Movie',
-      imageUrl: 'https://m.media-amazon.com/images/I/91hE3BQdJhL._AC_SL1500_.jpg',
-    ),
+FilmModel(
+  title: 'RRR',
+  type: 'Indian Movie',
+  imageUrl: 'https://i.imgur.com/7JpE7vJ.jpeg',
+),
 
-    FilmModel(
-      title: 'RRR',
-      type: 'Indian Movie',
-      imageUrl: 'https://m.media-amazon.com/images/I/81H2p5gF1-L._AC_SL1500_.jpg',
-    ),
+FilmModel(
+  title: 'Spider-Man: No Way Home',
+  type: 'Hollywood Movie',
+  imageUrl: 'https://i.imgur.com/FwjShuV.jpeg',
+),
 
-    FilmModel(
-      title: 'Spider-Man: No Way Home',
-      type: 'Hollywood Movie',
-      imageUrl: 'https://m.media-amazon.com/images/I/81t6AvLhHLL._AC_SL1500_.jpg',
-    ),
+FilmModel(
+  title: 'Frozen II',
+  type: 'Animation Movie',
+  imageUrl: 'https://i.imgur.com/7NsnWjr.jpeg',
+),
 
-    FilmModel(
-      title: 'Frozen II',
-      type: 'Animation Movie',
-      imageUrl: 'https://m.media-amazon.com/images/I/71tn7sMMo-L._AC_SL1024_.jpg',
-    ),
+FilmModel(
+  title: 'Wednesday',
+  type: 'Series',
+  imageUrl: 'https://i.imgur.com/S0R6p1c.jpeg',
+),
 
-    FilmModel(
-      title: 'Wednesday',
-      type: 'Series',
-      imageUrl: 'https://m.media-amazon.com/images/I/81xZbV2Jc7L._AC_SL1500_.jpg',
-    ),
   ];
 }
