@@ -70,10 +70,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
             ],),
             SizedBox(height: 20),
-            Row(children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
               Text('Category', style: TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.bold),),
               Spacer(),
-              Text('See All', style: TextStyle(color: Colors.red.shade800,fontSize: 16),),
+              Text('See All', style: TextStyle(color: Colors.red.shade800,fontSize: 15),),
             ],),
             SizedBox(height: 20,),
             Row(
@@ -87,7 +89,17 @@ class _HomeScreenState extends State<HomeScreen> {
                  
 
               ],
-            )
+            ),
+            SizedBox(height: 25,),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+              Text('Latest Movie', style: TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.bold),),
+              Spacer(),
+              Text('See All', style: TextStyle(color: Colors.red.shade800,fontSize: 15),),
+            ],),
+
+
           
           
           
@@ -128,7 +140,7 @@ class Category extends StatelessWidget {
         ),
         child: Text(emoji, style:TextStyle(fontSize: 24))
       ),
-      SizedBox(height: 15,),
+      SizedBox(height: 18,),
       Text(type, style: TextStyle(color: Colors.black,fontSize: 16),)
     ],);
   }
